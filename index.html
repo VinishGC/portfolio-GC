@@ -1,0 +1,219 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vgc — Portfolio</title>
+    <meta name="description" content="Portfolio of Your Name — projects, skills, and contact information." />
+    <link rel="canonical" href="https://example.com/" />
+    <link rel="icon" href="favicon.ico" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Your Name — Portfolio" />
+    <meta property="og:description" content="Projects, skills, and contact information." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Portfolio" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container header__inner">
+        <a class="brand" href="#hero" aria-label="Go to homepage">
+          <span class="brand__logo" aria-hidden="true">◆</span>
+          <span class="brand__text">Your Name</span>
+        </a>
+
+        <button id="menu-toggle" class="icon-btn header__menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <!-- Hamburger icon -->
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+
+        <nav id="site-nav" class="nav" aria-label="Primary">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#about">About</a></li>
+            <li><a class="nav__link" href="#skills">Skills</a></li>
+            <li><a class="nav__link" href="#projects">Projects</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button id="theme-toggle" class="btn header__theme" aria-pressed="false" aria-label="Toggle color theme">
+          <span class="theme-label">Dark</span>
+          <svg class="icon theme-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path class="icon-sun" d="M12 4V2m0 20v-2m8-8h2M2 12h2m12.95 6.95 1.41 1.41M4.64 4.64 6.05 6.05m11.31-1.41 1.41 1.41M4.64 19.36l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <circle class="icon-moon" cx="12" cy="12" r="5" fill="currentColor" opacity="0"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section id="hero" class="section hero">
+        <div class="container grid grid--2">
+          <div class="stack gap-3">
+            <h1 class="hero__title">Hi, I’m <span class="accent">Your Name</span>.</h1>
+            <p class="lead">Front-end developer crafting fast, accessible web experiences with a focus on clean UX and maintainable code.</p>
+            <div class="row gap-2">
+              <a class="btn btn--primary" href="#projects">View Projects</a>
+              <a class="btn btn--ghost" href="#contact">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero__media">
+            <img src="https://via.placeholder.com/640x400.png?text=Hero+Image" alt="Preview collage of selected projects" loading="lazy" decoding="async" width="640" height="400" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container grid grid--2">
+          <div>
+            <h2 class="section__title">About</h2>
+            <p>I’m a developer based in <strong>Your City</strong> with a passion for building delightful interfaces. I care about performance, accessibility, and good developer experience.</p>
+            <p>Currently exploring modern tooling, CSS architecture, and design systems.</p>
+          </div>
+          <ul class="list list--check">
+            <li>Accessible, semantic HTML</li>
+            <li>Responsive, mobile-first CSS</li>
+            <li>Progressive enhancement</li>
+            <li>Testing & performance budgets</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 class="section__title">Skills</h2>
+          <div class="chipset">
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+            <span class="chip">JavaScript (ES202x)</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">React</span>
+            <span class="chip">Node</span>
+            <span class="chip">Accessibility</span>
+            <span class="chip">Performance</span>
+            <span class="chip">Git</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section__title">Projects</h2>
+          <div class="cards">
+            <!-- Card 1 -->
+            <article class="card">
+              <img class="card__img" src="https://via.placeholder.com/640x360.png?text=Project+One" alt="Screenshot of Project One" loading="lazy" decoding="async" width="640" height="360" />
+              <div class="card__body">
+                <h3 class="card__title">Project One</h3>
+                <p class="card__desc">A performant SPA with accessible components and a11y-first design.</p>
+                <div class="card__tags">
+                  <span class="chip chip--small">React</span>
+                  <span class="chip chip--small">Vite</span>
+                  <span class="chip chip--small">ARIA</span>
+                </div>
+                <div class="row gap-1">
+                  <a class="btn btn--sm btn--primary" href="#" target="_blank" rel="noopener">Live</a>
+                  <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+              <img class="card__img" src="https://via.placeholder.com/640x360.png?text=Project+Two" alt="Screenshot of Project Two" loading="lazy" decoding="async" width="640" height="360" />
+              <div class="card__body">
+                <h3 class="card__title">Project Two</h3>
+                <p class="card__desc">Design system starter with tokens, theming, and documentation.</p>
+                <div class="card__tags">
+                  <span class="chip chip--small">CSS Variables</span>
+                  <span class="chip chip--small">Tokens</span>
+                  <span class="chip chip--small">Docs</span>
+                </div>
+                <div class="row gap-1">
+                  <a class="btn btn--sm btn--primary" href="#" target="_blank" rel="noopener">Live</a>
+                  <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+              <img class="card__img" src="https://via.placeholder.com/640x360.png?text=Project+Three" alt="Screenshot of Project Three" loading="lazy" decoding="async" width="640" height="360" />
+              <div class="card__body">
+                <h3 class="card__title">Project Three</h3>
+                <p class="card__desc">Server-rendered app with progressive enhancement and forms.</p>
+                <div class="card__tags">
+                  <span class="chip chip--small">SSR</span>
+                  <span class="chip chip--small">Forms</span>
+                  <span class="chip chip--small">Perf</span>
+                </div>
+                <div class="row gap-1">
+                  <a class="btn btn--sm btn--primary" href="#" target="_blank" rel="noopener">Live</a>
+                  <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container grid grid--2">
+          <div>
+            <h2 class="section__title">Contact</h2>
+            <p>Want to collaborate or have a project in mind? Send a message.</p>
+          </div>
+          <form id="contact-form" novalidate class="form" aria-describedby="form-errors">
+            <div class="form__field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required maxlength="80" autocomplete="name" />
+              <p class="form__error" id="error-name"></p>
+            </div>
+            <div class="form__field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required autocomplete="email" />
+              <p class="form__error" id="error-email"></p>
+            </div>
+            <div class="form__field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000"></textarea>
+              <p class="form__error" id="error-message"></p>
+            </div>
+            <div class="row gap-2">
+              <button class="btn btn--primary" type="submit">Send Message</button>
+              <p class="form__note" id="form-errors" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Your Name</p>
+        <ul class="row gap-2 footer__social">
+          <li><a class="nav__link" href="#" aria-label="GitHub">GitHub</a></li>
+          <li><a class="nav__link" href="#" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a class="nav__link" href="mailto:you@example.com" aria-label="Email">Email</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
